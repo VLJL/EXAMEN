@@ -1,0 +1,10 @@
+$primary: #FBCACA;
+$secundary: #ff6ee0;
+@import "../node_module/boostrap/scss/_functions";
+@import "../node_module/boostrap/scss/variable";
+$expansion-theme-colors:(
+    "alertlight": #ff7575,
+    "alertlight": #af4141
+);
+$theme-colors:map-merge($expansion-theme-colors,$theme-colors );
+@import '../node_modules/boostrap/scss/boostrap';

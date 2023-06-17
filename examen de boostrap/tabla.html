@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Menu Lateral</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    nav,
+    .offcanvas {
+      background-color: #F6ABC4;
+    }
+    .navbar-toggler {
+      border: none;
+    }
+    .navbar-toggler:focus {
+      outline: none;
+      box-shadow: none;
+    }
+
+    @media (max-width: 768px) {
+      .navbar-nav > li:hover {
+        background-color: #ff0055;
+      }
+    }
+  </style>
+  <body>
+    <!-- MENU INICIO  -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <!-- NAV CONTAINER INICIO -->
+      <div class="container-fluid">
+        <a href="" class="navbar-brand text-info fw-semibold fs-4">PRIMER TAB</a>
+
+        <!-- NAV BUTTON  -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#menuLateral"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- OFFCANVAS MAIN CONTAINER INICIO -->
+        <section
+          class="offcanvas offcanvas-start"
+          id="menuLateral"
+          tabindex="-1"
+        >
+          <div class="offcanvas-header" data-bs-theme="dark">
+            <h5 class="offcanvas-title text-info">PRIMER TAB</h5>
+            <button
+              class="btn-close"
+              type="button"
+              aria-label="Close"
+              data-bs-dismiss="offcanvas"
+            ></button>
+          </div>
+          <!-- OFF CANVAS MENU LINKS  INICIO-->
+          <div
+            class="offcanvas-body d-flex flex-column justify-content-between px-0"
+          >
+            <ul class="navbar-nav fs-5 justify-content-evenly">
+              <li class="nav-item p-3 py-md-1">
+                <a href="/SEGUNDATAB.html" class="nav-link">SEGUNDA TAB</a>
+              </li>
+              <li class="nav-item p-3 py-md-1">
+                <a href="/TERCERTAB.html" class="nav-link">TERCER TAB</a>
+              </li>
+              <li class="nav-item p-3 py-md-1">
+                <a href="/CUARTATAB.html" class="nav-link">CUARTA TAB</a>
+              </li>
+              <li class="nav-item p-3 py-md-1">
+                <a href="/QUINTATAB.html" class="nav-link">QUINTA TAB</a>
+              </li>
+            </ul>
+            
+        <!-- OFFCANVAS MAIN CONTAINER FIN  -->
+      </div>
+    </nav>
+<!--OTRO-->
+<section id="acerca">
+  <div class="container-md">
+      <div class="text-center">
+          <h2>DETALLES DE LA UNIVERSIDAD</h2>
+          <p class="lead text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, omnis?</p>
+      </div>
+      <div class="row my-5 g-5 justify-content-around align-items-center">
+          <div class="col-6 col-lg-4">
+              <img src="/RESOURSE/images.jpg" alt="UNIVERSIDAD" class="img-fluit" height="300px">
+          </div>
+          
+          <div class="col-lg-6">
+              <dic class="accordion" id="elementos"><!--acordion-->
+                  <div class="accordion-item">
+                      <h2 class="accordion-header" id="heading-1">
+                          <button class="accordion-button" type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#parte-1"
+                          aria-expanded="true"
+                          aria-controls="parte-1">
+                          conoce nuestros ambientes
+                          </button>
+                      </h2>
+                      <div id="parte-1" class="accordion-collapse collapse show" 
+                      aria-labelledby="heading-1"
+                      data-bs-parent="#elementos">
+                          <div class="accordion-body">
+                              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, quisquam.</p>
+                              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, quisquam.</p>
+                              
+                          </div>
+                      </div>
+                  </div>
+
+                  <!--otro acordionn-->
+<div class="accordion-item">
+  <h2 class="accordion-header" id="heading-2">
+      <button class="accordion-button" type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#parte-2"
+      aria-expanded="true"
+      aria-controls="parte-2">
+      contamos con convenios internacionales 
+      </button>
+  </h2>
+  <div id="parte-2" class="accordion-collapse collapse " 
+  aria-labelledby="heading-2"
+  data-bs-parent="#elementos">
+      <div class="accordion-body">
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, quisquam.</p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, quisquam.</p>
+          
+      </div>
+  </div>
+</div>
+<!--otro acordion-->
+<div class="accordion-item">
+  <h2 class="accordion-header" id="heading-3">
+      <button class="accordion-button" type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#parte-3"
+      aria-expanded="true"
+      aria-controls="parte-3">
+      contamos con docentes calificados
+      </button>
+  </h2>
+  <div id="parte-3" class="accordion-collapse collapse " 
+  aria-labelledby="heading-3"
+  data-bs-parent="#elementos">
+      <div class="accordion-body">
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, quisquam.</p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, quisquam.</p>
+          
+      </div>
+  </div>
+</div>
+<!--otro acordionn-->
+<div class="accordion-item">
+  <h2 class="accordion-header" id="heading-4">
+      <button class="accordion-button" type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#parte-4"
+      aria-expanded="true"
+      aria-controls="parte-4">
+      modalidad de clases
+      </button>
+  </h2>
+  <div id="parte-4" class="accordion-collapse collapse " 
+  aria-labelledby="heading-4"
+  data-bs-parent="#elementos">
+      <div class="accordion-body">
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, quisquam.</p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, quisquam.</p>
+          
+      </div>
+  </div>
+</div>
+<!--otro acordion-->
+<div class="accordion-item">
+  <h2 class="accordion-header" id="heading-5">
+      <button class="accordion-button" type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#parte-5"
+      aria-expanded="true"
+      aria-controls="parte-5">
+      sumate a la familia 
+      </button>
+  </h2>
+  <div id="parte-3" class="accordion-collapse collapse " 
+  aria-labelledby="heading-5"
+  data-bs-parent="#elementos">
+      <div class="accordion-body">
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, quisquam.</p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, quisquam.</p>
+          
+      </div>
+  </div>
+</div>
+
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
